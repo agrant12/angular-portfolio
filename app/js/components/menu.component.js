@@ -9,12 +9,12 @@ angular.
 			$scope.items = [
 				{
 					text: 'About',
-					url: '/',
+					url: '/about',
 					class: ''
 				},
 				{
 					text: 'Portfolio',
-					url: '/',
+					url: '/portfolio',
 					class: ''
 				},
 				{
@@ -24,12 +24,12 @@ angular.
 				},
 				{
 					text: 'Journal',
-					url: '/',
+					url: '/journal',
 					class: ''
 				},
 				{
 					text: 'Contact',
-					url: '/',
+					url: '/contact',
 					class: ''
 				}
 			]
