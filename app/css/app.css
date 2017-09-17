@@ -1,8 +1,15 @@
+body {
+	font-family: sans-serif;
+}
+
 main {
 	margin: 0 auto;
+	position: relative;
+	min-height: 300px;
 	width: 1000px;
 }
 
+/* Menu */
 menu {
 	padding: 0;
 	position: relative;
@@ -48,5 +55,36 @@ menu ul li a:hover {
 .branding p a {
 	display: block;
 	height: 45px;
+	width: 100%;
+}
+
+/* Works */
+
+#work {
+
+}
+
+#work header h3 {
+	color: #79a1e3;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#work header p {
+	color: #666;
+	font-size: 14px;
+	width: 470px;
+}
+
+/* Footer */
+footer {
+	bottom: 0;
+	position: absolute;
+}
+footer p {
+	color: #666;
+	font-size: 14px;
+	text-align: center;
 	width: 100%;
 }

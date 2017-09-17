@@ -1,11 +1,10 @@
 <section id="work">
 	<header>
 		<h3 class="title">Selected Works</h3>
-		<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum commodo nisi, sed facilisis sapien pellentesque in. Sed pharetra maximus nibh quis semper.</p>
 	</header>
 	<ul>
 		<li ng-repeat="item in $ctrl.items">
-			<p>{{ item.acf.project_type }}</p>
+			<p>{{ item.title.rendered }}</p>
 		</li>
 	</ul>
 </section>
