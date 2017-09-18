@@ -12,22 +12,18 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	add = require('gulp-add-src');
 
-
-var styles = {
-	src:    '${dirs.src}/sass',
-	build:  './app/css'
-},
-
-scripts = {
-	src:    '${dirs.src}/scripts',
-	build:  './app/js'
-};
-
 /*
  *  CSS task
  */
 gulp.task('styles', function () {
-
+	gulp.src('./app/css/*.scss')
+	.pipe(sass())
+	.pipe(cmq({ beautify: false }))
+	.pipe(autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
+	//.pipe(gulp.dest('./assets/css'))
+	.pipe(concat('app.css'))
+	.pipe(rename({ suffix: '.min' }))
+	.pipe(gulp.dest('./assets/css'));
 });
 
 /*
@@ -40,13 +36,13 @@ gulp.task('styles', function () {
 /*
  *  WATCH tasks to serve up
  */
- gulp.task('watch', ['styles', 'scripts'], function() {
-	gulp.watch('${styles.src}/**/*.scss', ['styles']);
-	gulp.watch('${scripts.src}/**/*.js', ['scripts']);
+ gulp.task('watch', ['styles'], function() {
+	//gulp.watch('${styles.src}/**/*.scss', ['styles']);
+	//gulp.watch('${scripts.src}/**/*.js', ['scripts']);
 });
 
 /*
  *  DEFAULT tasks to serve up
  */
- gulp.task('default', ['styles', 'scripts', 'templates']);
+ gulp.task('default', ['styles']);
 
