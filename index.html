@@ -6,23 +6,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
-
-	<script type="text/javascript" src="app/js/app.config.js"></script>
-	<script type="text/javascript" src="app/js/app.module.js"></script></script>
-	<script type="text/javascript" src="app/js/components/menu.component.js"></script>
-
-	<script type="text/javascript" src="app/js/components/works.module.js"></script>
-	<script type="text/javascript" src="app/js/components/works.component.js"></script>
-	<script type="text/javascript" src="app/js/components/footer.component.js"></script>
-	<script type="text/javascript" src="app/js/components/hero.component.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="app/css/app.css">
+
+	<script type="text/javascript" src="app/js/app.module.js"></script></script>
+	<script type="text/javascript" src="app/js/app.config.js"></script>
+	<!-- Structure -->
+	<script type="text/javascript" src="app/js/components/structure/menu.component.js"></script>
+
+	<script type="text/javascript" src="app/js/components/index/index.module.js"></script>
+	<script type="text/javascript" src="app/js/components/index/index.component.js"></script>
+
+	<script type="text/javascript" src="app/js/components/structure/footer.component.js"></script>
+
+	<!--<script type="text/javascript" src="app/js/components/works/works.module.js"></script>
+	<script type="text/javascript" src="app/js/components/works/works.component.js"></script>-->
+	<script type="text/javascript" src="app/js/components/hero.component.js"></script>
 </head>
 <body>
 	<main>
 		<menu></menu>
-		<hero></hero>
-		<work></work>
+		<div ng-view></div>
+		<foot></foot>
 	</main>
 </body>
 </html>

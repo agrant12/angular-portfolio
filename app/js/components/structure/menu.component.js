@@ -14,17 +14,17 @@ angular.
 				},
 				{
 					text: 'Portfolio',
-					url: '/portfolio',
+					url: '#!/portfolio',
 					class: ''
 				},
 				{
 					text: 'Branding',
-					url: '/',
+					url: '#!/',
 					class: 'branding'
 				},
 				{
 					text: 'Journal',
-					url: '/journal',
+					url: '#!/journal',
 					class: ''
 				},
 				{

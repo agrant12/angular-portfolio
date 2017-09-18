@@ -1,2 +1,2 @@
-// Set Angualr module
-angular.module('AlvinGrant', ['work']);
+// Set Angular module
+angular.module('AlvinGrant', ['index']);
