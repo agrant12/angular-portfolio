@@ -4,7 +4,9 @@
 	</header>
 	<ul>
 		<li ng-repeat="item in $ctrl.items">
-			<p>{{ item.title.rendered }}</p>
+			<img src="{{ item.better_featured_image.source_url }}" />
+			<p class="title">{{ item.title.rendered }}</p>
+			<p class="type">{{ item.acf.project_type }}</p>
 		</li>
 	</ul>
 </section>
