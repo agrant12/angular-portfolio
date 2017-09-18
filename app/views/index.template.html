@@ -1,0 +1,13 @@
+<hero></hero>
+<section id="work">
+	<header>
+		<h3 class="title">Selected Works</h3>
+	</header>
+	<ul>
+		<li ng-repeat="item in $ctrl.items">
+			<img src="{{ item.better_featured_image.source_url }}" />
+			<p class="title">{{ item.title.rendered }}</p>
+			<p class="type">{{ item.acf.project_type }}</p>
+		</li>
+	</ul>
+</section>
