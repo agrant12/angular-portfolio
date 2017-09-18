@@ -16,11 +16,10 @@ var gulp = require('gulp'),
  *  CSS task
  */
 gulp.task('styles', function () {
-	gulp.src('./app/css/*.scss')
+	gulp.src('./app/sass/*.scss')
 	.pipe(sass())
 	.pipe(cmq({ beautify: false }))
 	.pipe(autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
-	//.pipe(gulp.dest('./assets/css'))
 	.pipe(concat('app.css'))
 	.pipe(rename({ suffix: '.min' }))
 	.pipe(gulp.dest('./assets/css'));
@@ -37,7 +36,7 @@ gulp.task('styles', function () {
  *  WATCH tasks to serve up
  */
  gulp.task('watch', ['styles'], function() {
-	//gulp.watch('${styles.src}/**/*.scss', ['styles']);
+	gulp.watch('./app/sass/*/*.scss', ['styles']);
 	//gulp.watch('${scripts.src}/**/*.js', ['scripts']);
 });
 

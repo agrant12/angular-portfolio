@@ -1,0 +1,13 @@
+<section id="journal" class="home-section">
+	<header>
+		<h3 class="title">Journal</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies est vehicula risus feugiat dapibus. Vivamus at nunc eros. Nulla et arcu nec sem euismod euismod eu nec velit.</p>
+	</header>
+	<ul>
+		<li ng-repeat="jitem in $ctrl.jitems">
+			<img src="{{ jitem.better_featured_image.source_url }}" />
+			<p class="title">{{ jitem.title.rendered }}</p>
+			<p class="type">{{ jitem.acf.project_type }}</p>
+		</li>
+	</ul>
+</section>
