@@ -1,7 +1,7 @@
 {
   "name": "angular-portfolio",
   "version": "0.0.1",
-  "description": "Angular 1 portfolio application",
+  "description": "Angular JS portfolio application",
   "author": "Alvin Grant",
   "main": "gulpfile.babel.js",
   "homepage": "http://alvingrant.com",

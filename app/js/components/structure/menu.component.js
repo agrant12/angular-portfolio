@@ -9,7 +9,7 @@ angular.
 			$scope.items = [
 				{
 					text: 'About',
-					url: '/about',
+					url: '#!/about',
 					class: ''
 				},
 				{
