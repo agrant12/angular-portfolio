@@ -8,7 +8,7 @@
 			<div class="img-container"><img src="{{ jitem.better_featured_image.source_url }}" /></div>
 			<div class="description">
 				<p class="title">{{ jitem.title.rendered }}</p>
-				<p class="type">{{ jitem.excerpt.rendered }}</p>
+				<p class="type">{{ jitem.excerpt.rendered | removeTags }}</p>
 			</div>
 		</li>
 	</ul>
